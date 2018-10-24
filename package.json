@@ -28,7 +28,7 @@
   "dependencies": {
     "underscore": "~1.4.3",
     "colors": "~0.6.0-1",
-    "express": "~3.0.6",
+    "express": "~4.15.5",
     "argparse": "~0.1.10",
     "path": "~0.4.9",
     "rimraf": "~2.1.1",
@@ -41,7 +41,7 @@
     "node-bplist-creator": "~0.0.1",
     "node-uuid": "~1.4.0",
     "underscore.string": "~2.3.1",
-    "glob": "~3.1.20",
+    "glob": "~5.0.15",
     "unzip": "~0.1.1",
     "ncp": "~0.4.2",
     "swig": "~0.13.5",
