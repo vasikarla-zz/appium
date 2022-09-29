@@ -26,31 +26,34 @@
     "lib": "./app"
   },
   "dependencies": {
-    "underscore": "~1.4.3",
+    "underscore": "~1.12.1",
     "colors": "~0.6.0-1",
-    "express": "~3.0.6",
-    "argparse": "~0.1.10",
+    "express": "~4.16.0",
+    "argparse": "~1.0.0",
     "path": "~0.4.9",
     "rimraf": "~2.1.1",
     "uuid-js": "~0.7.4",
     "temp": "~0.5.0",
-    "winston": "~0.6.2",
-    "request": "~2.12.0",
+    "winston": "~0.8.0",
+    "request": "~2.68.0",
     "bplist-parser": "~0.0.4",
     "bufferpack": "0.0.6",
     "node-bplist-creator": "~0.0.1",
     "node-uuid": "~1.4.0",
     "underscore.string": "~2.3.1",
-    "glob": "~3.1.20",
+    "glob": "~5.0.15",
     "unzip": "~0.1.1",
     "ncp": "~0.4.2",
     "swig": "~0.13.5",
     "async": "~0.2.6",
     "mkdirp": "~0.3.5",
-    "binary-cookies": "~0.1.1"
+    "binary-cookies": "~0.1.1",
+    "@snyk/protect": "latest"
   },
   "scripts": {
-    "test": "grunt travis"
+    "test": "grunt travis",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "mocha": "~1.8.1",
@@ -65,5 +68,6 @@
     "grunt-contrib-jshint": "~0.1.1",
     "saucelabs": "~0.0.7",
     "namp": "~0.2.25"
-  }
+  },
+  "snyk": true
 }
